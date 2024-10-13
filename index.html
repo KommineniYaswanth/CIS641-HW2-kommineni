@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Basic Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.75;
-            background: #f4f4f4;
+            background: #e0f7fa;
             color: #333;
         }
         .fade-in {
@@ -22,6 +24,9 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 40px;
+            background: #ffffff; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         /* Intro */
         #intro {
@@ -31,6 +36,7 @@
         #intro h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            color: #00796b; /* Teal color for headings */
         }
         #intro p {
             font-size: 1.25em;
@@ -45,16 +51,6 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-        }
-        /* Header */
-        #header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #header .logo {
-            font-size: 1.5em;
-            text-decoration: none;
-            color: #007bff;
         }
         /* Nav */
         #nav {
@@ -71,41 +67,14 @@
         }
         #nav .links a {
             text-decoration: none;
-            color: #333;
+            color: #007bff; 
         }
-        #nav .icons {
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
+        /* Project Section */
+        #project {
+            margin-top: 40px;
         }
-        #nav .icons li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        #nav .icons a {
-            text-decoration: none;
-            color: #333;
-        }
-        /* Featured Post */
-        .post.featured {
-            text-align: center;
-        }
-        .post.featured .image.main img {
-            max-width: 50%;
-            border-radius: 8px;
-        }
-        /* Posts */
-        .posts {
-            display: flex;
-            justify-content: space-around;
-        }
-        .posts article {
-            width: 45%;
-            text-align: center;
-        }
-        .posts .image.fit img {
-            max-width: 50%;
-            border-radius: 8px;
+        #project h2 {
+            color: #00796b;
         }
         /* Footer */
         #footer {
@@ -154,39 +123,30 @@
 
         <!-- Intro -->
         <div id="intro">
-            <h1>This is<br />
-            Yaswanth Kommineni</h1>
+            <h1>This is<br />Yaswanth Naga Babu Kommineni</h1>
             <p>A Sample Website for the CIS641 HW2</p>
-            <p>Portifolio<br></p>
-            <a href="https://github.com/KommineniYaswanth">GitHub</span></a>
+            <p>Portfolio<br></p>
+            <a href="https://github.com/KommineniYaswanth" class="button">View GitHub</a>
         </div>
         
-        <!-- Main -->
-        <div id="main">
-
-            <!-- Featured Post -->
-            <article class="post featured">
-                <header class="major">
-                    <h2><a>My Photo</a></h2>
-                </header>
-                <a href="#" class="image main"><img src="images/Mypic.jpg" alt="My Photo" /></a>
-            </article>
-
-            <!-- Posts -->
-            <section class="posts">
-                <article>
-                    <header>
-                        <h2><a href="#"></a></h2>
-                    </header>
-                    <a href="#" class="image fit"><img src="images/Mypic1.jpg" alt="My Photo 1" /></a>
-                </article>
-                <article>
-                    <header>
-                        <h2><a href="#"></a></h2>
-                    </header>
-                    <a href="#" class="image fit"><img src="images/Mypic2.jpg" alt="My Photo 2" /></a>
-                </article>
-            </section>
+        <!-- Project Section -->
+        <div id="project">
+            <h2>Project Proposal: Hydration Reminder App</h2>
+            <h3>Team: Data Wizards</h3>
+            <h4>Team Members: Likhithasree Kommineni, Yaswanth Naga Babu Kommineni, Srinija Reddy Kotla</h4>
+            <p>The project's goal is to develop a cutting-edge smartphone application that assists users in staying hydrated. Users can establish customizable goals for water intake, track their daily consumption, and receive frequent push reminders throughout the day via an easy-to-use interface.</p>
+            <p>The app will provide users with a comprehensive picture of their hydration patterns by integrating seamlessly with popular health-tracking programs and smartwatches. It will utilize data analytics to offer tailored recommendations, enhancing users' overall well-being by encouraging them to lead healthier lifestyles.</p>
+            <h4>Technologies Used:</h4>
+            <ul>
+                <li>HTML, CSS, JavaScript for front-end development</li>
+                <li>Python for back-end functionality</li>
+                <li>GitHub for version control</li>
+                <li>MongoDB for data storage</li>
+            </ul>
+            <h4>Estimated Timeline:</h4>
+            <p>Week 1-2: Research and design.<br>Week 3-4: Front-end development.<br>Week 5-6: Back-end development.<br>Week 6-7: Testing and debugging.<br>Week 7-8: Deployment and feedback gathering.</p>
+            <h4>Anticipated Challenges:</h4>
+            <p>Ensuring timely notifications and securing user data, particularly personal health information.</p>
         </div>
 
         <!-- Footer -->
@@ -215,8 +175,7 @@
             <section class="split contact">
                 <section class="alt">
                     <h3>Address</h3>
-                    <p>GVSU<br />
-                    Grand Rapids, MI 00000-0000</p>
+                    <p>GVSU<br />Grand Rapids, MI 00000-0000</p>
                 </section>
                 <section>
                     <h3>Phone</h3>
@@ -231,6 +190,7 @@
                     <a href="https://www.instagram.com/yaswanth_chowdary_kommineni/">Instagram</a><br>
                     <a href="https://www.youtube.com/@YaswanthChowdaryKommineni">YouTube</a>
                 </section>
+            </section>
         </footer>
 
     </div>
