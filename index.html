@@ -3,175 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaswanth Naga Babu Kommineni - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Basic Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.75;
-            background: #e0f7fa;
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
             color: #333;
         }
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        /* Wrapper */
         #wrapper {
             max-width: 960px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 40px;
-            background: #ffffff; /* White background for content */
-            border-radius: 10px; /* Rounded corners */
+            background: #fff;
+            border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        /* Intro */
-        #intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        #intro h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #00796b; /* Teal color for headings */
-        }
-        #intro p {
-            font-size: 1.25em;
-            color: #666;
-        }
-        .actions {
-            margin-top: 20px;
-        }
-        .actions .button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        /* Nav */
-        #nav {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        #nav .links {
-            list-style: none;
-            padding: 0;
-        }
-        #nav .links li {
-            display: inline-block;
-            margin-right: 15px;
-        }
-        #nav .links a {
-            text-decoration: none;
-            color: #007bff; 
-        }
-        /* Project Section */
-        #project {
-            margin-top: 40px;
-        }
-        #project h2 {
-            color: #00796b;
-        }
-        /* Footer */
-        #footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-        #footer .fields .field {
-            margin-bottom: 15px;
-        }
-        #footer input[type="text"], #footer textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        #footer .actions {
-            text-align: right;
-        }
-        #footer .actions input {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        /* Contact Info */
-        .split.contact section {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .split.contact h3 {
-            margin-bottom: 10px;
-        }
-        .split.contact p, .split.contact a {
+        h1, h2 {
             color: #007bff;
+            text-align: center;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        a.button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+        }
+        a.button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
         }
     </style>
 </head>
-<body class="is-preload">
+<body>
 
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
+<div id="wrapper">
+    <h1>Yaswanth Naga Babu Kommineni</h1>
 
-        <!-- Intro -->
-        <div id="intro">
-            <h1>This is<br />Yaswanth Naga Babu Kommineni</h1>
-            <p>A Sample Website for the CIS641 HW2</p>
-            <p>Portfolio<br></p>
-            <a href="https://github.com/KommineniYaswanth" class="button">View GitHub</a>
-        </div>
-        
-        <!-- Project Section -->
-        <div id="project">
-            <h2>Project Proposal: Hydration Reminder App</h2>
-            <h3>Team: Data Wizards</h3>
-            <h4>Team Members: Likhithasree Kommineni, Yaswanth Naga Babu Kommineni, Srinija Reddy Kotla</h4>
-            <p>The project's goal is to develop a cutting-edge smartphone application that assists users in staying hydrated. Users can establish customizable goals for water intake, track their daily consumption, and receive frequent push reminders throughout the day via an easy-to-use interface.</p>
-            <p>The app will provide users with a comprehensive picture of their hydration patterns by integrating seamlessly with popular health-tracking programs and smartwatches. It will utilize data analytics to offer tailored recommendations, enhancing users' overall well-being by encouraging them to lead healthier lifestyles.</p>
-            <h4>Technologies Used:</h4>
-            <ul>
-                <li>HTML, CSS, JavaScript for front-end development</li>
-                <li>Python for back-end functionality</li>
-                <li>GitHub for version control</li>
-                <li>MongoDB for data storage</li>
-            </ul>
-            <h4>Estimated Timeline:</h4>
-            <p>Week 1-2: Research and design.<br>Week 3-4: Front-end development.<br>Week 5-6: Back-end development.<br>Week 6-7: Testing and debugging.<br>Week 7-8: Deployment and feedback gathering.</p>
-            <h4>Anticipated Challenges:</h4>
-            <p>Ensuring timely notifications and securing user data, particularly personal health information.</p>
-        </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <ul>
+            <li>Going on drives</li>
+            <li>Watching movies</li>
+            <li>Interested in Data Analytics</li>
+        </ul>
+    </section>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Address</h3>
-                    <p>GVSU<br />Grand Rapids, MI 00000-0000</p>
-                </section>
-                <section>
-                    <h3>Phone</h3>
-                    <p><a href="#">(616) 299-****</a></p>
-                </section>
-                <section>
-                    <h3>Email</h3>
-                    <p><a href="#">yaswanth@example.com</a></p>
-                </section>
-                <section>
-                    <h3>Social</h3>
-                    <a href="https://www.instagram.com/yaswanth_chowdary_kommineni/">Instagram</a><br>
-                    <a href="https://www.youtube.com/@YaswanthChowdaryKommineni">YouTube</a>
-                </section>
-            </section>
-        </footer>
+    <section id="technical-background">
+        <h2>Technical Background</h2>
+        <p>I have experience with data management and analysis using various tools. My background includes:</p>
+        <ul>
+            <li>Knowledge of MS Excel, R, and Python.</li>
+            <li>Familiarity with SQL databases and data visualization tools such as ggplot2.</li>
+        </ul>
+    </section>
 
-    </div>
+    <section id="term-project">
+        <h2>Term Project</h2>
+        <p>This semester, I am working on a project focused on analyzing the impact of violent crime rates in California.  
+        Using data from the FBI's Uniform Crime Reports, I aim to explore trends across regions, counties, and cities. 
+        The project will help identify patterns and provide insights for public safety initiatives and policymaking.</p>
+    </section>
+
+    <section id="github">
+        <h2>GitHub Link</h2>
+        <a href="https://your-team-github-page.github.io" class="button">Visit Team Data Wizards on GitHub</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>Connect with me on 
+        <a href="https://www.instagram.com/yaswanth_chowdary_kommineni/" target="_blank">Instagram</a> | 
+        <a href="https://www.youtube.com/@YaswanthChowdaryKommineni" target="_blank">YouTube</a>
+    </p>
+</footer>
+
 </body>
 </html>
